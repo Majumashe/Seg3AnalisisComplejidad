@@ -25,16 +25,16 @@ public class Main {
         ArrayList<Integer> lista2= new ArrayList<>(); //O(1)
         for(int i=0; i < lista1.length; i++){ //O(n)
             if(i>0 && lista1[i] != lista1[i-1]){ //O(n)
-                if(lista1[i] == lista1[i+1]){
-                    lista2.add(lista1[i]);
+                if(lista1[i] == lista1[i+1]){  //O(n)
+                    lista2.add(lista1[i]); //O(n)
                 }
             }
         }
-        return lista2;
+        return lista2; //O(1)
     }
 
 
-    private boolean esPalindromo(String palabra) {
+    public boolean esPalindromo(String palabra) {
         //apunta al primer carácter de la palabra
         int left = 0; //O(1)
         //apunta al último carácter de la palabra
